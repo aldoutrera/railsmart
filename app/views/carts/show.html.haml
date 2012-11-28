@@ -3,9 +3,19 @@
 %h2 The cart
 
 %ul
- - @cart.line_items.each do |item|
-  %li= item.product.title
+  - @cart.line_items.each do |item|
+    %li
+      = item.quantity
+      &times;
+      = item.product.title
+      = number_to_currency(item.total_price)
+
+%p
+  Total
+  = number_to_currency(@cart.total_price)
 
 = link_to 'Edit', edit_cart_path(@cart)
 \|
 = link_to 'Back', carts_path
+\|
+= button_to 'Empty Cart', @cart, method: :delete, confirm: 'Are you sure?'
