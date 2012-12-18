@@ -4,3 +4,9 @@ es:
     index:
       title_html: "T&uacute; Catalogo"
       add_html: "Agrega al Carrito"
+
+  sessions:
+    new:
+      login_legend: "Favor de identificarse"
+      name_html: "Nombre: "
+      password_html: "Contrase&ntilde;a: "

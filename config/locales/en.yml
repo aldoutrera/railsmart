@@ -6,3 +6,10 @@ en:
     index:
       title_html: "Yout Catalog"
       add_html: "Add to Cart"
+
+  sessions:
+    new:
+      login_legend: "Please, Log In"
+      name_html: "Name: "
+      password_html: "Password: "
+
