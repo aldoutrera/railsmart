@@ -5,14 +5,14 @@
   = form_tag do
     %fieldset
       %legend
-        Please Log In
+        = t('.login_legend')
 
       %div
-        = label_tag :name, "Name: "
+        = label_tag :name, t('.name_html')
         = text_field_tag :name, params[:name]
 
       %div
-        = label_tag :password, "Password: "
+        = label_tag :password, t('.password_html')
         = text_field_tag :password, params[:name]
 
       %div
